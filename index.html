@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+    <head>   
+        <center>
+        <img src="http://i.imgur.com/FggwihY.png"></img>
+        </center>
+        
+        <style>
+            body
+            {
+            background-image:url('http://i.imgur.com/QcuoIsM.jpg');
+            background-repeat:repeat;
+            }
+        </style>
+        
+        
+        <script type="text/javascript" language="Javascript/1.2">
+            var snd = new Audio('https://dl.dropboxusercontent.com/u/43182979/shortwater2.mp3');
+            var wind = new Audio('https://dl.dropboxusercontent.com/u/43182979/shortwind2.mp3');
+            var fount = new Audio('https://dl.dropboxusercontent.com/u/43182979/shortfount.mp3');
+            var founta = new Audio('https://dl.dropboxusercontent.com/u/43182979/founta.mp3');
+            var stream = new Audio('https://dl.dropboxusercontent.com/u/43182979/another%20fount.mp3');
+            var mouth = new Audio('https://dl.dropboxusercontent.com/u/43182979/mouth.mp3');
+            
+            var imageArray = [
+                "http://farm8.staticflickr.com/7303/9344193314_88d20e1f5c_o.gif",
+                "http://i.imgur.com/Qvi5VU7.gif",
+                "http://i.imgur.com/a85qhwk.gif",
+                "http://farm6.staticflickr.com/5532/9341405543_ca6a2640e1_o.gif",
+                "http://i.imgur.com/3wod1dm.gif",
+                "http://i.imgur.com/v45904P.gif",
+                "http://i1282.photobucket.com/albums/a521/lpeng32/bigjet1_zps366ca957.gif",
+                "http://i.imgur.com/2oMVUwX.gif",
+                "http://i.imgur.com/YbLXhAE.gif",
+                "http://i.imgur.com/vfhxDoZ.gif",
+                "http://i.imgur.com/v4E6kbo.gif"
+                ];
+            
+            function preload(src) {
+                var image = new Image();
+                image.src = src;
+            }
+            
+            for (var i = 0; i < imageArray.length; i++) preload(imageArray[i]);
+            
+            function mouseOn() {
+                document.images["d"].src = "http://farm8.staticflickr.com/7303/9344193314_88d20e1f5c_o.gif";
+                document.images["e"].src = "http://i.imgur.com/Qvi5VU7.gif";
+                document.images["f"].src = "http://i.imgur.com/a85qhwk.gif";
+                snd.loop = true;
+                snd.play();
+                
+            }
+            function mouseOff() {
+                document.images["d"].src = "http://i.imgur.com/CjGB0on.gif";
+                document.images["e"].src = "http://i.imgur.com/m8mXGSL.gif";
+                document.images["f"].src = "http://i.imgur.com/BtiTjRh.gif";
+                snd.pause();
+            }
+            function windOn() {
+                document.images["a"].src = "http://farm6.staticflickr.com/5532/9341405543_ca6a2640e1_o.gif";
+                wind.loop = true;
+                wind.play();
+            }
+            function windOff() {
+                document.images["a"].src = "http://i.imgur.com/z0iDbuI.gif";
+                wind.pause();
+            }
+            function smallOn() {
+                document.images["b"].src = "http://i.imgur.com/3wod1dm.gif";
+                fount.loop = true;
+                fount.play();
+            }
+            function smallOff() {
+                document.images["b"].src = "http://i.imgur.com/M6wlBIU.gif";
+                fount.pause();
+            }
+            function bigOn() {
+                document.images["c"].src = "http://i.imgur.com/v45904P.gif";
+                founta.loop = true;
+                founta.play();
+            }
+            function bigOff() {
+                document.images["c"].src = "http://i.imgur.com/nxLej0t.gif";
+                founta.pause();
+            }
+            
+            function bigJetOn() {
+                document.images["big1"].src = "http://i1282.photobucket.com/albums/a521/lpeng32/bigjet1_zps366ca957.gif";
+                document.images["big2"].src = "http://i.imgur.com/2oMVUwX.gif";
+                founta.loop = true;
+                founta.play();
+            }
+            function bigJetOff() {
+                document.images["big1"].src = "http://i.imgur.com/lGVAdgl.gif";
+                document.images["big2"].src = "http://i.imgur.com/eY3H1xV.gif";
+                founta.pause();
+            }
+            function rightOn() {
+                document.images["right"].src = "http://i.imgur.com/YbLXhAE.gif";
+                mouth.loop = true;
+                mouth.play();
+            }
+            function rightOff() {
+                document.images["right"].src = "http://i.imgur.com/IkEEYmw.gif";
+                mouth.pause();
+            }
+            function statOn() {
+                document.images["stat"].src = "http://i.imgur.com/vfhxDoZ.gif";
+                stream.loop = true;
+                stream.play();
+            }
+            function statOff() {
+                document.images["stat"].src = "http://i.imgur.com/o2sNJlJ.gif";
+                stream.pause();
+            }
+            function leftOn() {
+                document.images["left"].src = "http://i.imgur.com/zn17HIJ.gif";
+                mouth.loop = true;
+                mouth.play();
+            }
+            function leftOff() {
+                document.images["left"].src = "http://i.imgur.com/5lJun0Q.gif";
+                mouth.pause();
+            }
+            function lotsOn() {
+                document.images["lots"].src = "http://i.imgur.com/v4E6kbo.gif";
+                fount.loop = true;
+                fount.play();
+            }
+            function lotsOff() {
+                document.images["lots"].src = "http://i.imgur.com/2SqgkCr.gif";
+                fount.pause();
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+        <div id="cinema" style="width:640px";>
+            <img class="bg" src="http://i.imgur.com/siYyNFF.gif"></img>
+            <img class="a" name="a" src="http://i.imgur.com/z0iDbuI.gif" onmouseover="windOn();" onmouseout="windOff();" /></img>
+            <img class="b" name="b" src="http://i.imgur.com/M6wlBIU.gif" onmouseover="smallOn();" onmouseout="smallOff();" /></img>
+            <img class="c" name="c" src="http://i.imgur.com/nxLej0t.gif" onmouseover="bigOn();" onmouseout="bigOff();" /></img>
+            <img class="d" name="d" src="http://i.imgur.com/CjGB0on.gif" onmouseover="mouseOn();" onmouseout="mouseOff();" /></img>
+            <img class="e" name="e" src="http://i.imgur.com/m8mXGSL.gif" onmouseover="mouseOn();" onmouseout="mouseOff();" /></img>
+            <img class="f" name="f" src="http://i.imgur.com/BtiTjRh.gif" onmouseover="mouseOn();" onmouseout="mouseOff();" /></img>
+        </div>
+        
+        <div id="second" style="width:640px";>
+            <img class="bgg" src="http://i.imgur.com/4NAf1mt.gif"></img>
+            <img class="big1" name = "big1" src="http://i.imgur.com/lGVAdgl.gif" onmouseover="bigJetOn();" onmouseout="bigJetOff();" /></img>
+            <img class="big2" name = "big2" src="http://i.imgur.com/eY3H1xV.gif" onmouseover="bigJetOn();" onmouseout="bigJetOff();" /></img>
+            <img class="stat" name="stat" src="http://i.imgur.com/o2sNJlJ.gif" onmouseover="statOn();" onmouseout="statOff();" /></img>
+            <img class="left" name="left" src="http://i.imgur.com/5lJun0Q.gif" onmouseover="leftOn();" onmouseout="leftOff();" /></img>
+            <img class="right" name="right" src="http://i.imgur.com/IkEEYmw.gif" onmouseover="rightOn();" onmouseout="rightOff();" /></img>
+            <img class="lots" name="lots" src="http://i.imgur.com/2SqgkCr.gif" onmouseover="lotsOn();" onmouseout="lotsOff();" /></img>
+        </div>
+        <style type="text/css">
+            
+            #cinema {
+                position:relative;
+                margin: 0 auto;
+            }
+            
+            .bg {
+                position:relative;
+                outline-style:solid;
+                outline-width:1px;
+                outline-color:#cccccc;
+                width:640px;
+                height:480px;
+            }
+            
+            .a {
+                position:absolute;
+                z-index:1;
+                top: 0px;
+                left:0px;
+                width:326px;
+                height:201px;
+            }
+            .b {
+                position:absolute;
+                top: 201px;
+                left:184px;
+                width:150px; 
+                height:82px;
+            }
+            .c {
+                position:absolute;
+                top: 305px;
+                left:378px;
+                width:175px;
+                height:105px;
+            }
+            .d {
+                position:absolute;
+                top: 201px;
+                left:0px;
+                width:184px;
+                height:279px;
+            }
+            .e {
+                position:absolute;
+                top: 283px;
+                left:184px;
+                width:194px;
+                height:197px;
+            }
+            .f {
+                position:absolute;
+                top: 410px;
+                left:378px;
+                width:262px;
+                height:70px;
+            }
+            
+            #second {
+                position:relative;
+                margin: 0 auto;
+            }
+            
+            .bgg {
+                position:relative;
+                outline-style:solid;
+                outline-width:1px;
+                outline-color:#cccccc;
+                width:640px;
+                height:480px;
+            }
+            
+            .big1 {
+                position:absolute;
+                top: 0px;
+                left:264px;
+                width:147px;
+                height:480px;
+            }
+            .big2 {
+                position:absolute;
+                top: 251px;
+                left:411px;
+                width:121px;
+                height:228px;
+            }
+            .stat {
+                position:absolute;
+                top: 143px;
+                left:0px;
+                width:88px;
+                height:132px;
+            }
+            .left {
+                position:absolute;
+                top: 61px;
+                left:88px;
+                width:96px;
+                height:214px;
+            }
+            .right {
+                position:absolute;
+                top: 49px;
+                left:411px;
+                width:77px;
+                height:201px;
+            }
+            .lots {
+                position:absolute;
+                top: 176px;
+                left:522px;
+                width:118px;
+                height:186px;
+            }
+            
+            a:link {
+              color: white;
+              background-color: transparent ;
+              text-decoration: underline;
+            }
+            
+            a:visited {
+              color: white;
+              background-color: transparent ;
+              text-decoration: none;
+            }
+            a:hover {
+              color: rgb(240,0,253);
+            }
+            
+            
+        </style>
+        
+        
+
+        <p style="color:white;font-style:italic;text-align:right">by Lily Peng, July 2013</p>
+        <p></p>
+        <center><p style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; font-style: normal;color:white;"><a href="https://c9.io/necomni/cinemagraph/workspace/about.html">About</a> <b>&middot;</b> <a href="https://c9.io/necomni/cinemagraph/workspace/cinemagraphs.html">Classic Cinemagraphs</a> <b>&middot;</b> <a href="mailto:ms.lilypeng@gmail.com">Email Me</a></p></center>
+        <!--purple color:rgb(73,32,134)
+        Enjoy accompanying ambient music!
+        <p></p>
+        <audio controls="controls"><source src="https://dl.dropboxusercontent.com/u/3092201/Music/2013/7-6-2013%20Night.mp3" type="audio/mpeg" /></audio>
+        -->
+        
+    </body>
+</html>
