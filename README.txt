@@ -1,4 +1,4 @@
-Code hosted here: https://c9.io/necomni/cinemagraph/workspace/index.html
+Deployed here: http://lilypeng.com/interactive-cinemagraphs
 
 
 Lily Peng
